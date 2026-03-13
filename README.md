@@ -1,5 +1,6 @@
 Baza dinozaurów / wymarłych zwierząt
- Aplikacja okienkowa napisana w C# z wykorzystaniem Windows Forms, której celem jest zarządzanie bazą wymarłych zwierząt 
+
+Aplikacja okienkowa napisana w C# z wykorzystaniem Windows Forms, której celem jest zarządzanie bazą wymarłych zwierząt 
  oraz demonstracja przepływu danych pomiędzy oknami aplikacji.
 Opis projektu
 Projekt został przygotowany jako aplikacja wielookienkowa. Program umożliwia:
