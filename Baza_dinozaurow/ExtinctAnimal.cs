@@ -8,13 +8,13 @@ namespace Baza_dinozaurow
 {
     public class ExtinctAnimal
     {
-        public string Name {  get; set; }
-        public string Epoch { get; set; }
-        public string Place { get; set; } 
+        public string Nazwa {  get; set; }
+        public string Epoka { get; set; }
+        public string Miejsce_wystepowania { get; set; } 
 
         public override string ToString()
         {
-            return Name + " - " + Epoch + " - " + Place; 
+            return Nazwa+ " - " + Epoka + " - " + Miejsce_wystepowania; 
         }
     }
 }

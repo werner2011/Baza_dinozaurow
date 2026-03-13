@@ -23,23 +23,23 @@ namespace Baza_dinozaurow
         {
             animals.Add(new ExtinctAnimal
             {
-                Name = "Mamut włochaty",
-                Epoch = "Kenozoik",
-                Place = "Europa"
+                Nazwa = "Mamut wlochaty",
+                Epoka = "Kenozoik",
+                Miejsce_wystepowania = "Europa"
             });
 
             animals.Add(new ExtinctAnimal
             {
-                Name = "Smilodon",
-                Epoch = "Kenozoik",
-                Place = "Ameryka Północna"
+                Nazwa = "Smilodon",
+                Epoka = "Kenozoik",
+                Miejsce_wystepowania = "Ameryka Polnocna"
             });
 
             animals.Add(new ExtinctAnimal
             {
-                Name = "Tyrannosaurus rex",
-                Epoch = "Kreda",
-                Place = "Ameryka Północna"
+                Nazwa = "Tyrannosaurus rex",
+                Epoka = "Kreda",
+                Miejsce_wystepowania = "Ameryka Polnocna"
             });
         }
 

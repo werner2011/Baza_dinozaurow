@@ -31,8 +31,8 @@ namespace Baza_dinozaurow
             comboBoxPlace.Items.Add("Europa");
             comboBoxPlace.Items.Add("Azja");
             comboBoxPlace.Items.Add("Afryka");
-            comboBoxPlace.Items.Add("Ameryka Północna");
-            comboBoxPlace.Items.Add("Ameryka Południowa");
+            comboBoxPlace.Items.Add("Ameryka Polnocna");
+            comboBoxPlace.Items.Add("Ameryka Poludniowa");
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -41,15 +41,15 @@ namespace Baza_dinozaurow
                 comboBoxEpoch.SelectedItem == null ||
                 comboBoxPlace.SelectedItem == null)
             {
-                MessageBox.Show("Uzupełnij wszystkie pola.");
+                MessageBox.Show("Uzupelnij wszystkie pola.");
                 return;
             }
 
             ExtinctAnimal animal = new ExtinctAnimal
             {
-                Name = textBoxName.Text,
-                Epoch = comboBoxEpoch.SelectedItem.ToString(),
-                Place = comboBoxPlace.SelectedItem.ToString()
+                Nazwa = textBoxName.Text,
+                Epoka = comboBoxEpoch.SelectedItem.ToString(),
+                Miejsce_wystepowania = comboBoxPlace.SelectedItem.ToString()
             };
 
             if (animals != null)
@@ -57,7 +57,7 @@ namespace Baza_dinozaurow
                 animals.Add(animal);
             }
 
-            MessageBox.Show("Dodano zwierzę.");
+            MessageBox.Show("Dodano zwierze.");
             this.Close();
         }
         private void Form1_Load(object sender, EventArgs e)

@@ -30,13 +30,13 @@ namespace Baza_dinozaurow
             List<ExtinctAnimal> filtered = Animals;
 
             if (radioTrias.Checked)
-                filtered = filtered.Where(a => a.Epoch == "Trias").ToList();
+                filtered = filtered.Where(a => a.Epoka == "Trias").ToList();
             else if (radioJura.Checked)
-                filtered = filtered.Where(a => a.Epoch == "Jura").ToList();
+                filtered = filtered.Where(a => a.Epoka == "Jura").ToList();
             else if (radioKreda.Checked)
-                filtered = filtered.Where(a => a.Epoch == "Kreda").ToList();
+                filtered = filtered.Where(a => a.Epoka == "Kreda").ToList();
             else if (radioKenozoik.Checked)
-                filtered = filtered.Where(a => a.Epoch == "Kenozoik").ToList();
+                filtered = filtered.Where(a => a.Epoka == "Kenozoik").ToList();
 
             ShowAnimals(filtered);
         }
@@ -48,9 +48,9 @@ namespace Baza_dinozaurow
             if (animal != null)
             {
                 labelDetails.Text =
-                    "Nazwa: " + animal.Name + Environment.NewLine +
-                    "Epoka: " + animal.Epoch + Environment.NewLine +
-                    "Miejsce: " + animal.Place;
+                    "Nazwa: " + animal.Nazwa + Environment.NewLine +
+                    "Epoka: " + animal.Epoka + Environment.NewLine +
+                    "Miejsce: " + animal.Miejsce_wystepowania;
             }
         }
         private void groupBox1_Enter(object sender, EventArgs e)

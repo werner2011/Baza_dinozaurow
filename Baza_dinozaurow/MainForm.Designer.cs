@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewAnimals = new System.Windows.Forms.DataGridView();
             this.buttonOpenAdd = new System.Windows.Forms.Button();
             this.buttonOpenFilter = new System.Windows.Forms.Button();
@@ -36,17 +39,42 @@
             // 
             // dataGridViewAnimals
             // 
+            this.dataGridViewAnimals.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewAnimals.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewAnimals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAnimals.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewAnimals.Location = new System.Drawing.Point(73, 12);
             this.dataGridViewAnimals.Name = "dataGridViewAnimals";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewAnimals.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewAnimals.RowHeadersWidth = 62;
             this.dataGridViewAnimals.RowTemplate.Height = 28;
-            this.dataGridViewAnimals.Size = new System.Drawing.Size(519, 229);
+            this.dataGridViewAnimals.Size = new System.Drawing.Size(715, 227);
             this.dataGridViewAnimals.TabIndex = 0;
             // 
             // buttonOpenAdd
             // 
-            this.buttonOpenAdd.Location = new System.Drawing.Point(163, 315);
+            this.buttonOpenAdd.Location = new System.Drawing.Point(73, 266);
             this.buttonOpenAdd.Name = "buttonOpenAdd";
             this.buttonOpenAdd.Size = new System.Drawing.Size(114, 55);
             this.buttonOpenAdd.TabIndex = 1;
@@ -56,7 +84,7 @@
             // 
             // buttonOpenFilter
             // 
-            this.buttonOpenFilter.Location = new System.Drawing.Point(444, 315);
+            this.buttonOpenFilter.Location = new System.Drawing.Point(489, 266);
             this.buttonOpenFilter.Name = "buttonOpenFilter";
             this.buttonOpenFilter.Size = new System.Drawing.Size(139, 55);
             this.buttonOpenFilter.TabIndex = 2;
@@ -68,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1035, 450);
             this.Controls.Add(this.buttonOpenFilter);
             this.Controls.Add(this.buttonOpenAdd);
             this.Controls.Add(this.dataGridViewAnimals);
