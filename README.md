@@ -1,4 +1,4 @@
- Baza dinozaurów / wymarłych zwierząt
+Baza dinozaurów / wymarłych zwierząt
  Aplikacja okienkowa napisana w C# z wykorzystaniem Windows Forms, której celem jest zarządzanie bazą wymarłych zwierząt 
  oraz demonstracja przepływu danych pomiędzy oknami aplikacji.
 Opis projektu
@@ -14,19 +14,22 @@ Założenie, że dane przepływają pomiędzy oknami w zależności od działań
 - okno dodawania nowego wpisu,
 - okno filtrowania i podglądu szczegółów,
 - filtrowanie zwierząt według wybranej epoki.
+
 Struktura aplikacji
+
 ### `Program.cs`
+
 Punkt startowy aplikacji. Odpowiada za uruchomienie programu od formularza głównego `MainForm`.
 
 ### `ExtinctAnimal.cs`
+
 Klasa modelu danych opisująca pojedyncze wymarłe zwierzę.  
 Zawiera podstawowe właściwości:
 - Nazwa
 - Epoka
 - Miejsce_wystepowania
 
-MainForm
-Główne okno aplikacji.  
+MainForm - Główne okno aplikacji.  
 Odpowiada za:
 - przechowywanie listy obiektów ExtinctAnimal,
 - wyświetlanie danych w kontrolce DataGridView,
